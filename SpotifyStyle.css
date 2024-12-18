@@ -24,6 +24,7 @@ body{
     border-radius: 1rem;
     overflow: auto;
     background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
 
 }
 
@@ -146,26 +147,115 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
 }
 
 .main-nav-icons{
-    margin-left: 0.5rem ;
+    margin-left: 0.75rem ;
 }
 
-.main-nav-option{
+.main-nav-options{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main-nav-option button{
-    margin-right: 1rem;
-}
+} 
 
 .nav-item{
     margin-right: 1rem;
 }
 
-@media (max-width:100px){
-    
+@media (max-width:1000px){
+    .hide{ 
+        display: none;
+    }
+}
+
+/* card */
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size:0.85rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    height: 60%;
+    width: 100%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+
+.player-music{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.album{
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    width: 20%;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.playing-img{
+    height: 50px;
+    width: 50px;
+}
+
+.about-song{
+    flex: 1;
+    margin-left: 15px;
+}
+
+.title{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.info{
+    font-size:0.5rem;
+    color: #aaa;
+    margin-top: none;
+}
+
+.music-icons{
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s;
 }
