@@ -227,9 +227,9 @@ a{
     display: flex;
     align-items: center;
     margin-top: 11px;
+    margin-left: 10px;
     width: 20%;
     justify-content: space-between;
-    background-color: blue;
 }
 
 .playing-img{
@@ -252,10 +252,18 @@ a{
     color: #aaa;
     margin-top: none;
 }
-
+.music-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
 .music-icons{
     font-size: 20px;
     color: #aaa;
     cursor: pointer;
     transition: color 0.3s;
+}
+
+.music-icons i:hover {
+    color: #fff;
 }
